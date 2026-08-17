@@ -30,28 +30,365 @@
                     var segment = location.pathname.split('/').filter(Boolean)[0];
                     if (segment) prefix = '/' + segment;
                 }
-                if (!prefix) return;
 
                 function rewrite(url) {
-                    if (typeof url === 'string' && url.indexOf('/tests/') === 0) {
+                    if (prefix && typeof url === 'string' && url.indexOf('/tests/') === 0) {
                         return prefix + url;
                     }
                     return url;
                 }
 
+                var MAX_LOGS = 200;
+                var logs = [];
+                var nextId = 1;
+                var listeners = [];
+
+                function notify() {
+                    for (var i = 0; i < listeners.length; i++) listeners[i]();
+                }
+
+                function addLog(entry) {
+                    logs.unshift(entry);
+                    if (logs.length > MAX_LOGS) logs.pop();
+                    notify();
+                    return entry;
+                }
+
+                function updateLog(id, patch) {
+                    for (var i = 0; i < logs.length; i++) {
+                        if (logs[i].id === id) {
+                            for (var key in patch) logs[i][key] = patch[key];
+                            break;
+                        }
+                    }
+                    notify();
+                }
+
+                function serializeBody(body) {
+                    if (body == null || body === '') return '';
+                    if (typeof body === 'string') return body;
+                    if (typeof FormData !== 'undefined' && body instanceof FormData) {
+                        var parts = [];
+                        body.forEach(function (value, key) {
+                            parts.push(key + '=' + (value && value.name ? '[file ' + value.name + ']' : String(value)));
+                        });
+                        return parts.join('\n');
+                    }
+                    if (typeof Blob !== 'undefined' && body instanceof Blob) {
+                        return '[Blob ' + body.size + ' bytes]';
+                    }
+                    try {
+                        return JSON.stringify(body);
+                    } catch (e) {
+                        return String(body);
+                    }
+                }
+
                 var xhrOpen = XMLHttpRequest.prototype.open;
+                var xhrSend = XMLHttpRequest.prototype.send;
+                var xhrSetHeader = XMLHttpRequest.prototype.setRequestHeader;
+
                 XMLHttpRequest.prototype.open = function (method, url) {
-                    arguments[1] = rewrite(url);
+                    var resolved = rewrite(url);
+                    this.__gpLog = {
+                        method: String(method || 'GET').toUpperCase(),
+                        url: String(resolved),
+                        headers: {},
+                    };
+                    arguments[1] = resolved;
                     return xhrOpen.apply(this, arguments);
+                };
+
+                XMLHttpRequest.prototype.setRequestHeader = function (key, value) {
+                    if (this.__gpLog) this.__gpLog.headers[key] = value;
+                    return xhrSetHeader.apply(this, arguments);
+                };
+
+                XMLHttpRequest.prototype.send = function (body) {
+                    var meta = this.__gpLog;
+                    if (meta) {
+                        var entry = addLog({
+                            id: nextId++,
+                            method: meta.method,
+                            url: meta.url,
+                            requestHeaders: meta.headers,
+                            requestBody: serializeBody(body),
+                            status: 0,
+                            statusText: 'pending',
+                            responseBody: '',
+                            duration: 0,
+                            pending: true,
+                            error: false,
+                            startedAt: Date.now(),
+                        });
+                        var xhr = this;
+                        this.addEventListener('loadend', function () {
+                            updateLog(entry.id, {
+                                status: xhr.status,
+                                statusText: xhr.statusText || (xhr.status ? String(xhr.status) : 'error'),
+                                responseBody: typeof xhr.responseText === 'string' ? xhr.responseText : '',
+                                duration: Date.now() - entry.startedAt,
+                                pending: false,
+                                error: xhr.status === 0 || xhr.status >= 400,
+                            });
+                        });
+                    }
+                    return xhrSend.apply(this, arguments);
                 };
 
                 if (window.fetch) {
                     var origFetch = window.fetch;
                     window.fetch = function (input, init) {
-                        if (typeof input === 'string') input = rewrite(input);
-                        return origFetch.call(this, input, init);
+                        init = init || {};
+                        var url = typeof input === 'string' ? input : input && input.url;
+                        var resolved = rewrite(url);
+                        if (typeof input === 'string') input = resolved;
+
+                        var entry = addLog({
+                            id: nextId++,
+                            method: String(init.method || (input && input.method) || 'GET').toUpperCase(),
+                            url: String(resolved || url || ''),
+                            requestHeaders: init.headers || {},
+                            requestBody: serializeBody(init.body),
+                            status: 0,
+                            statusText: 'pending',
+                            responseBody: '',
+                            duration: 0,
+                            pending: true,
+                            error: false,
+                            startedAt: Date.now(),
+                        });
+
+                        return origFetch
+                            .call(this, input, init)
+                            .then(function (res) {
+                                return res.clone().text().then(
+                                    function (text) {
+                                        updateLog(entry.id, {
+                                            status: res.status,
+                                            statusText: res.statusText,
+                                            responseBody: text,
+                                            duration: Date.now() - entry.startedAt,
+                                            pending: false,
+                                            error: !res.ok,
+                                        });
+                                        return res;
+                                    },
+                                    function () {
+                                        updateLog(entry.id, {
+                                            status: res.status,
+                                            statusText: res.statusText,
+                                            responseBody: '[binary response]',
+                                            duration: Date.now() - entry.startedAt,
+                                            pending: false,
+                                            error: !res.ok,
+                                        });
+                                        return res;
+                                    }
+                                );
+                            })
+                            .catch(function (err) {
+                                updateLog(entry.id, {
+                                    status: 0,
+                                    statusText: 'network error',
+                                    responseBody: String(err && err.message ? err.message : err),
+                                    duration: Date.now() - entry.startedAt,
+                                    pending: false,
+                                    error: true,
+                                });
+                                throw err;
+                            });
                     };
                 }
+
+                function formatBody(raw) {
+                    if (raw == null || raw === '') return '—';
+                    if (typeof raw !== 'string') {
+                        try {
+                            raw = JSON.stringify(raw);
+                        } catch (e) {
+                            return String(raw);
+                        }
+                    }
+                    try {
+                        return JSON.stringify(JSON.parse(raw), null, 2);
+                    } catch (e) {
+                        return raw;
+                    }
+                }
+
+                function escapeHtml(value) {
+                    return String(value)
+                        .replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;')
+                        .replace(/"/g, '&quot;');
+                }
+
+                function shortUrl(url) {
+                    try {
+                        var parsed = new URL(url, location.href);
+                        return parsed.pathname + parsed.search;
+                    } catch (e) {
+                        return url;
+                    }
+                }
+
+                var host = document.createElement('div');
+                host.id = 'gp-request-inspector';
+                document.body.appendChild(host);
+                var shadow = host.attachShadow({ mode: 'open' });
+
+                shadow.innerHTML =
+                    '<style>' +
+                    ':host { all: initial; }' +
+                    '* { box-sizing: border-box; font-family: ui-sans-serif, system-ui, sans-serif; }' +
+                    '.btn { position: fixed; top: calc(12px + env(safe-area-inset-top, 0px)); left: calc(12px + env(safe-area-inset-left, 0px)); z-index: 2147483646; display: flex; align-items: center; gap: 6px; height: 36px; padding: 0 10px 0 8px; border: 0; border-radius: 999px; background: #111827; color: #fff; box-shadow: 0 8px 24px rgba(0,0,0,.28); cursor: pointer; }' +
+                    '.btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }' +
+                    '.badge { min-width: 18px; height: 18px; padding: 0 5px; border-radius: 999px; background: #2563eb; color: #fff; font-size: 11px; line-height: 18px; text-align: center; font-weight: 700; }' +
+                    '.overlay { position: fixed; inset: 0; z-index: 2147483647; background: rgba(15,23,42,.45); display: none; }' +
+                    '.overlay.open { display: block; }' +
+                    '.panel { position: absolute; top: 8px; right: 8px; bottom: 8px; width: min(440px, calc(100vw - 16px)); background: #0f172a; color: #e2e8f0; border-radius: 16px; box-shadow: 0 24px 60px rgba(0,0,0,.4); display: flex; flex-direction: column; overflow: hidden; }' +
+                    '.head { display: flex; align-items: center; gap: 8px; padding: 12px 12px 10px; border-bottom: 1px solid #1e293b; }' +
+                    '.head h2 { margin: 0; font-size: 14px; font-weight: 700; flex: 1; }' +
+                    '.head button { border: 0; background: #1e293b; color: #cbd5e1; border-radius: 8px; height: 28px; padding: 0 8px; cursor: pointer; font-size: 12px; }' +
+                    '.search { width: 100%; margin: 0; padding: 8px 12px; border: 0; border-bottom: 1px solid #1e293b; background: #0f172a; color: #e2e8f0; font-size: 13px; outline: none; }' +
+                    '.list { flex: 1; overflow: auto; padding: 8px; }' +
+                    '.empty { padding: 24px 12px; text-align: center; color: #64748b; font-size: 13px; }' +
+                    '.item { border: 1px solid #1e293b; background: #111827; border-radius: 12px; margin-bottom: 8px; overflow: hidden; }' +
+                    '.row { width: 100%; display: grid; grid-template-columns: 58px 1fr auto; gap: 8px; align-items: center; padding: 8px 10px; border: 0; background: transparent; color: inherit; text-align: left; cursor: pointer; }' +
+                    '.method { font-size: 11px; font-weight: 800; letter-spacing: .04em; }' +
+                    '.url { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #cbd5e1; }' +
+                    '.meta { font-size: 11px; color: #94a3b8; white-space: nowrap; }' +
+                    '.ok { color: #34d399; } .wait { color: #fbbf24; } .bad { color: #f87171; }' +
+                    '.details { display: none; padding: 0 10px 10px; }' +
+                    '.item.open .details { display: block; }' +
+                    '.label { margin: 8px 0 4px; font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: .04em; }' +
+                    'pre { margin: 0; padding: 8px; border-radius: 8px; background: #020617; color: #d1fae5; font-size: 11px; line-height: 1.45; overflow: auto; max-height: 240px; white-space: pre-wrap; word-break: break-word; }' +
+                    '</style>' +
+                    '<button class="btn" type="button" title="Запросы">' +
+                    '<svg viewBox="0 0 24 24"><path d="M4 12h6l2-7 4 14 2-7h2"/></svg>' +
+                    '<span>Запросы</span>' +
+                    '<span class="badge">0</span>' +
+                    '</button>' +
+                    '<div class="overlay">' +
+                    '<div class="panel">' +
+                    '<div class="head"><h2>Запросы</h2><button class="clear" type="button">Очистить</button><button class="close" type="button">Закрыть</button></div>' +
+                    '<input class="search" type="search" placeholder="Фильтр по URL или методу">' +
+                    '<div class="list"><div class="empty">Запросов пока нет</div></div>' +
+                    '</div>' +
+                    '</div>';
+
+                var button = shadow.querySelector('.btn');
+                var badge = shadow.querySelector('.badge');
+                var overlay = shadow.querySelector('.overlay');
+                var panel = shadow.querySelector('.panel');
+                var list = shadow.querySelector('.list');
+                var search = shadow.querySelector('.search');
+                var openId = null;
+
+                function statusClass(item) {
+                    if (item.pending) return 'wait';
+                    if (item.error) return 'bad';
+                    return 'ok';
+                }
+
+                function render() {
+                    badge.textContent = String(logs.length);
+                    var query = (search.value || '').trim().toLowerCase();
+                    var items = logs.filter(function (item) {
+                        if (!query) return true;
+                        return (
+                            item.method.toLowerCase().indexOf(query) !== -1 ||
+                            item.url.toLowerCase().indexOf(query) !== -1 ||
+                            String(item.status).indexOf(query) !== -1
+                        );
+                    });
+
+                    if (!items.length) {
+                        list.innerHTML = '<div class="empty">' + (logs.length ? 'Ничего не найдено' : 'Запросов пока нет') + '</div>';
+                        return;
+                    }
+
+                    list.innerHTML = items
+                        .map(function (item) {
+                            var statusLabel = item.pending ? '…' : item.status || 'ERR';
+                            var timeLabel = item.pending ? 'ожидание' : item.duration + ' мс';
+                            return (
+                                '<div class="item' +
+                                (openId === item.id ? ' open' : '') +
+                                '" data-id="' +
+                                item.id +
+                                '">' +
+                                '<button class="row" type="button">' +
+                                '<span class="method ' +
+                                statusClass(item) +
+                                '">' +
+                                escapeHtml(item.method) +
+                                '</span>' +
+                                '<span class="url">' +
+                                escapeHtml(shortUrl(item.url)) +
+                                '</span>' +
+                                '<span class="meta ' +
+                                statusClass(item) +
+                                '">' +
+                                escapeHtml(statusLabel) +
+                                ' · ' +
+                                escapeHtml(timeLabel) +
+                                '</span>' +
+                                '</button>' +
+                                '<div class="details">' +
+                                '<div class="label">URL</div><pre>' +
+                                escapeHtml(item.url) +
+                                '</pre>' +
+                                '<div class="label">Тело запроса</div><pre>' +
+                                escapeHtml(formatBody(item.requestBody)) +
+                                '</pre>' +
+                                '<div class="label">Ответ</div><pre>' +
+                                escapeHtml(formatBody(item.responseBody)) +
+                                '</pre>' +
+                                '</div>' +
+                                '</div>'
+                            );
+                        })
+                        .join('');
+                }
+
+                listeners.push(render);
+
+                button.addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    overlay.classList.add('open');
+                    render();
+                });
+
+                overlay.addEventListener('click', function (event) {
+                    if (event.target === overlay) overlay.classList.remove('open');
+                });
+
+                shadow.querySelector('.close').addEventListener('click', function () {
+                    overlay.classList.remove('open');
+                });
+
+                shadow.querySelector('.clear').addEventListener('click', function () {
+                    logs.splice(0, logs.length);
+                    openId = null;
+                    notify();
+                });
+
+                search.addEventListener('input', render);
+
+                list.addEventListener('click', function (event) {
+                    var item = event.target.closest('.item');
+                    if (!item) return;
+                    var id = Number(item.getAttribute('data-id'));
+                    openId = openId === id ? null : id;
+                    render();
+                });
+
+                panel.addEventListener('click', function (event) {
+                    event.stopPropagation();
+                });
             })();
         </script>
         <script src="./gigaplan-widget.js"></script>
