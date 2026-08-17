@@ -2,8 +2,12 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <title>Gigaplan</title>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
         <style>
             html,
             body {
@@ -61,11 +65,22 @@
                 }
 
                 var params = new URLSearchParams(window.location.search);
-                var complexId = params.get('complexId') || params.get('complex') || undefined;
+                var startParam =
+                    window.Telegram &&
+                    window.Telegram.WebApp &&
+                    window.Telegram.WebApp.initDataUnsafe &&
+                    window.Telegram.WebApp.initDataUnsafe.start_param;
+                var complexId =
+                    params.get('complexId') || params.get('complex') || startParam || undefined;
+
+                if (window.Telegram && window.Telegram.WebApp) {
+                    window.Telegram.WebApp.ready();
+                    window.Telegram.WebApp.expand();
+                }
 
                 window.GigaplanWidget.mountGigaplanWidget({
                     target: '#gigaplan-widget',
-                    mode: 'embed',
+                    mode: 'telegram',
                     complexId: complexId,
                     positionButton: 'right',
                 });
