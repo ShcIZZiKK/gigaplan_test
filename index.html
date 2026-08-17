@@ -20,6 +20,37 @@
     </head>
     <body>
         <div id="gigaplan-widget"></div>
+        <script>
+            (function () {
+                var prefix = '';
+                if (/\.github\.io$/i.test(location.hostname)) {
+                    var segment = location.pathname.split('/').filter(Boolean)[0];
+                    if (segment) prefix = '/' + segment;
+                }
+                if (!prefix) return;
+
+                function rewrite(url) {
+                    if (typeof url === 'string' && url.indexOf('/tests/') === 0) {
+                        return prefix + url;
+                    }
+                    return url;
+                }
+
+                var xhrOpen = XMLHttpRequest.prototype.open;
+                XMLHttpRequest.prototype.open = function (method, url) {
+                    arguments[1] = rewrite(url);
+                    return xhrOpen.apply(this, arguments);
+                };
+
+                if (window.fetch) {
+                    var origFetch = window.fetch;
+                    window.fetch = function (input, init) {
+                        if (typeof input === 'string') input = rewrite(input);
+                        return origFetch.call(this, input, init);
+                    };
+                }
+            })();
+        </script>
         <script src="./gigaplan-widget.js"></script>
         <script>
             (function () {
