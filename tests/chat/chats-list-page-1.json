@@ -1,0 +1,47 @@
+{
+    "chats": [
+        {
+            "chatId": "f67890ab-cdef-1234-5678-901234567890",
+            "title": "Вчера полдень",
+            "status": "ACTIVE",
+            "createdAt": "2026-05-13T12:00:00Z",
+            "updatedAt": "2026-05-13T12:00:00Z",
+            "state": null
+        },
+        {
+            "chatId": "7890abcd-ef12-3456-7890-123456789012",
+            "title": "Вчера рано",
+            "status": "ACTIVE",
+            "createdAt": "2026-05-13T06:30:45Z",
+            "updatedAt": "2026-05-13T06:30:45Z",
+            "state": null
+        },
+        {
+            "chatId": "f67890ab-cdef-1234-5678-901234567895",
+            "title": "Вчера полдень ARCHIVE",
+            "status": "ARCHIVE",
+            "createdAt": "2026-05-13T12:00:00Z",
+            "updatedAt": "2026-05-13T12:00:00Z",
+            "state": null
+        },
+        {
+            "chatId": "7890abcd-ef12-3456-7890-123456789015",
+            "title": "Вчера рано DELETED",
+            "status": "DELETED",
+            "createdAt": "2026-05-13T06:30:45Z",
+            "updatedAt": "2026-05-13T06:30:45Z",
+            "state": null
+        },
+        {
+            "chatId": "90abcdef-1234-5678-9012-345678901234",
+            "title": "План на квартал",
+            "status": "ACTIVE",
+            "createdAt": "2026-03-22T11:11:11Z",
+            "updatedAt": "2026-04-01T09:30:00Z",
+            "state": null
+        }
+    ],
+    "hasOlder": true,
+    "hasNewer": true,
+    "total": 14
+}

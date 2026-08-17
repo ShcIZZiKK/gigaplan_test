@@ -1,0 +1,72 @@
+{
+    "userMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440010",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "USER",
+        "content": "Привет! Покажи слайдер",
+        "createdAt": "2026-04-23T12:00:00Z",
+        "dataObjectVisual": null,
+        "suggestedOptions": null,
+        "suggestedOptionsStrict": null,
+        "selectedOption": null
+    },
+    "assistantMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440011",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "ASSISTANT",
+        "content": "Здравствуйте! Вот слайдер с картинками. Чем ещё могу помочь?",
+        "createdAt": "2026-04-23T12:00:01Z",
+        "dataObjectVisual": {
+            "images": [
+                {
+                    "src": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                    "title": "Заголовок картинки 1"
+                },
+                {
+                    "src": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                    "title": "Заголовок картинки 2"
+                },
+                {
+                    "src": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                    "title": "Заголовок картинки 3"
+                }
+            ],
+            "miniInfo": {
+                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                "title": "Заголовок картинки 1",
+                "fullscreen": true
+            }
+        },
+        "suggestedOptions": [
+            {
+                "title": "Расскажи о погоде",
+                "type": "query"
+            },
+            {
+                "title": "Покажи примеры",
+                "type": "query"
+            },
+            {
+                "title": "Помоги с задачей",
+                "type": "query"
+            }
+        ],
+        "suggestedOptionsStrict": [
+            {
+                "type": "premise",
+                "label": "Квартира №3, 2-комн., 62.4 м²",
+                "payload": {
+                    "id": 315
+                }
+            },
+            {
+                "type": "premise",
+                "label": "Квартира №5, 1-комн., 45.0 м²",
+                "payload": {
+                    "id": 318
+                }
+            }
+        ],
+        "selectedOption": null
+    }
+}

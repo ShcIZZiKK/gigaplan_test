@@ -1,0 +1,16 @@
+{
+    "images": [
+        {
+            "src": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+            "title": "Заголовок картинки 1"
+        },
+        {
+            "src": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+            "title": "Заголовок картинки 2"
+        },
+        {
+            "src": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+            "title": "Заголовок картинки 3"
+        }
+    ]
+}

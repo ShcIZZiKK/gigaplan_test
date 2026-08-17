@@ -1,0 +1,27 @@
+{
+    "messages": [
+        {
+            "messageId": "640e8400-e29b-41d4-a716-446655440001",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "[мок] Старое сообщение — подгрузка при прокрутке вверх (1)",
+            "createdAt": "2026-04-22T10:00:00.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "640e8400-e29b-41d4-a716-446655440002",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "[мок] Старое сообщение — подгрузка при прокрутке вверх (2)",
+            "createdAt": "2026-04-22T10:00:01.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        }
+    ],
+    "targetMessageIndex": 0,
+    "hasOlder": false,
+    "hasNewer": false
+}

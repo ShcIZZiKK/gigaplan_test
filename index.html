@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gigaplan</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            #gigaplan-widget {
+                height: 100%;
+            }
+        </style>
+        <script src="https://telegram.org"></script>
+    </head>
+    <body>
+        <div id="gigaplan-widget"></div>
+        <script src="./gigaplan-widget.js"></script>
+        <script>
+            (function () {
+                if (
+                    !window.GigaplanWidget ||
+                    typeof window.GigaplanWidget.mountGigaplanWidget !== 'function'
+                ) {
+                    return;
+                }
+
+                var params = new URLSearchParams(window.location.search);
+                var complexId = params.get('complexId') || params.get('complex') || undefined;
+
+                window.GigaplanWidget.mountGigaplanWidget({
+                    target: '#gigaplan-widget',
+                    mode: 'telegram',
+                    complexId: complexId,
+                    positionButton: 'right',
+                });
+            })();
+        </script>
+    </body>
+</html>

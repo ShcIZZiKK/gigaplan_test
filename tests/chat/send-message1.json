@@ -1,0 +1,953 @@
+{
+    "userMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440010",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "USER",
+        "content": "Привет! покажи способы оплаты",
+        "createdAt": "2026-04-23T12:00:00Z",
+        "dataObjectVisual": null,
+        "suggestedOptions": null,
+        "suggestedOptionsStrict": null,
+        "selectedOption": null
+    },
+    "assistantMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440011",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "ASSISTANT",
+        "content": "Вот способы оплаты, что я нашёл. Чем ещё могу помочь?\n\nТут второй абзац с контентом\n\nТут третий абзац с контентом\n\n",
+        "createdAt": "2026-04-23T12:00:01Z",
+        "dataObjectVisual": {
+            "progress": {
+                "filters": [
+                    {
+                        "category": "years",
+                        "allTitle": "Все года",
+                        "items": [
+                            {
+                                "id": 2,
+                                "value": "2025",
+                                "title": "2025"
+                            },
+                            {
+                                "id": 3,
+                                "value": "2024",
+                                "title": "2024"
+                            },
+                            {
+                                "id": 4,
+                                "value": "2023",
+                                "title": "2023"
+                            },
+                            {
+                                "id": 5,
+                                "value": "2022",
+                                "title": "2022"
+                            },
+                            {
+                                "id": 6,
+                                "value": "2021",
+                                "title": "2021"
+                            },
+                            {
+                                "id": 7,
+                                "value": "2020",
+                                "title": "2020"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "month",
+                        "allTitle": "Все месяцы",
+                        "items": [
+                            {
+                                "id": 2,
+                                "value": "january",
+                                "title": "Январь"
+                            },
+                            {
+                                "id": 3,
+                                "value": "february",
+                                "title": "Февраль"
+                            },
+                            {
+                                "id": 4,
+                                "value": "march",
+                                "title": "Март"
+                            },
+                            {
+                                "id": 5,
+                                "value": "april",
+                                "title": "Апрель"
+                            },
+                            {
+                                "id": 6,
+                                "value": "may",
+                                "title": "Май"
+                            },
+                            {
+                                "id": 7,
+                                "value": "june",
+                                "title": "Июнь"
+                            },
+                            {
+                                "id": 8,
+                                "value": "july",
+                                "title": "Июль"
+                            },
+                            {
+                                "id": 9,
+                                "value": "august",
+                                "title": "Август"
+                            },
+                            {
+                                "id": 10,
+                                "value": "september",
+                                "title": "Сентябрь"
+                            },
+                            {
+                                "id": 11,
+                                "value": "october",
+                                "title": "Октябрь"
+                            },
+                            {
+                                "id": 12,
+                                "value": "november",
+                                "title": "Ноябрь"
+                            },
+                            {
+                                "id": 13,
+                                "value": "december",
+                                "title": "Декабрь"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "corpus",
+                        "allTitle": "Все корпуса",
+                        "items": [
+                            {
+                                "id": 2,
+                                "value": "1",
+                                "title": "Корпус 1"
+                            },
+                            {
+                                "id": 3,
+                                "value": "8",
+                                "title": "Корпус 8"
+                            }
+                        ]
+                    }
+                ],
+                "items": [
+                    {
+                        "year": "2025",
+                        "month": "Январь",
+                        "title": "Январь 2025",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2025",
+                        "month": "Февраль",
+                        "title": "Февраль 2025",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2025",
+                        "month": "Март",
+                        "title": "Март 2025",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2025",
+                        "month": "Апрель",
+                        "title": "Апрель 2025",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2025",
+                        "month": "Май",
+                        "title": "Май 2025",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2025",
+                        "month": "Июнь",
+                        "title": "Июнь 2025",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Январь",
+                        "title": "Январь 2024",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Февраль",
+                        "title": "Февраль 2024",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Март",
+                        "title": "Март 2024",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Апрель",
+                        "title": "Апрель 2024",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Май",
+                        "title": "Май 2024",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Июнь",
+                        "title": "Июнь 2024",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Июнь",
+                        "title": "Июнь 2024",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Июль",
+                        "title": "Июль 2024",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Июль",
+                        "title": "Июль 2024",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Август",
+                        "title": "Август 2024",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Сентябрь",
+                        "title": "Сентябрь 2024",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Октябрь",
+                        "title": "Октябрь 2024",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Ноябрь",
+                        "title": "Ноябрь 2024",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2024",
+                        "month": "Декабрь",
+                        "title": "Декабрь 2024",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2023",
+                        "month": "Февраль",
+                        "title": "Февраль 2023",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2023",
+                        "month": "Апрель",
+                        "title": "Апрель 2023",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2023",
+                        "month": "Июнь",
+                        "title": "Июнь 2023",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2023",
+                        "month": "Август",
+                        "title": "Август 2023",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2023",
+                        "month": "Сентябрь",
+                        "title": "Сентябрь 2023",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2023",
+                        "month": "Октябрь",
+                        "title": "Октябрь 2023",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2023",
+                        "month": "Ноябрь",
+                        "title": "Ноябрь 2023",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2023",
+                        "month": "Декабрь",
+                        "title": "Декабрь 2023",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2022",
+                        "month": "Январь",
+                        "title": "Январь 2022",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2022",
+                        "month": "Март",
+                        "title": "Март 2022",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2022",
+                        "month": "Май",
+                        "title": "Май 2022",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2022",
+                        "month": "Июль",
+                        "title": "Июль 2022",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2022",
+                        "month": "Август",
+                        "title": "Август 2022",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2022",
+                        "month": "Октябрь",
+                        "title": "Октябрь 2022",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2022",
+                        "month": "Декабрь",
+                        "title": "Декабрь 2022",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2021",
+                        "month": "Март",
+                        "title": "Март 2021",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2021",
+                        "month": "Июнь",
+                        "title": "Июнь 2021",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2021",
+                        "month": "Сентябрь",
+                        "title": "Сентябрь 2021",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2021",
+                        "month": "Ноябрь",
+                        "title": "Ноябрь 2021",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2020",
+                        "month": "Апрель",
+                        "title": "Апрель 2020",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2020",
+                        "month": "Июль",
+                        "title": "Июль 2020",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg",
+                        "album": [
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2020",
+                        "month": "Октябрь",
+                        "title": "Октябрь 2020",
+                        "corpus": {
+                            "id": "1",
+                            "label": "Корпус 1"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/novostroyka-dzhoys-2749173663-1.jpg"
+                            },
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            },
+                            {
+                                "image": "https://img.kvmeter.ru/upload/iblock/06e/06e1982866ddbbf5e67d7fb9273274b0.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "year": "2020",
+                        "month": "Декабрь",
+                        "title": "Декабрь 2020",
+                        "corpus": {
+                            "id": "8",
+                            "label": "Корпус 8"
+                        },
+                        "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                        "album": [
+                            {
+                                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "miniInfo": {
+                "title": "Ход строительства",
+                "image": "https://images.cdn-cian.ru/images/shift-moskva-jk-2272336799-10.jpg",
+                "fullscreen": false
+            }
+        },
+        "suggestedOptions": [
+            {
+                "title": "Расскажи о погоде",
+                "type": "query"
+            },
+            {
+                "title": "Покажи примеры",
+                "type": "query"
+            },
+            {
+                "title": "Помоги с задачей",
+                "type": "query"
+            }
+        ],
+        "suggestedOptionsStrict": [
+            {
+                "type": "premise",
+                "label": "Квартира №3, 2-комн., 62.4 м²",
+                "payload": {
+                    "id": 315
+                }
+            },
+            {
+                "type": "premise",
+                "label": "Квартира №5, 1-комн., 45.0 м²",
+                "payload": {
+                    "id": 318
+                }
+            }
+        ],
+        "selectedOption": null
+    }
+}

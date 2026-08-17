@@ -1,0 +1,52 @@
+{
+    "userMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-888655440088",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "USER",
+        "content": "Иван\n\n+79505005050",
+        "createdAt": "2026-04-23T12:00:00Z",
+        "dataObjectVisual": null,
+        "suggestedOptions": null,
+        "suggestedOptionsStrict": null,
+        "selectedOption": null
+    },
+    "assistantMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440011",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "ASSISTANT",
+        "content": "\uD83D\uDC4D\uFE0F\n\nСпасибо, заявка была успешно отправлена!\n\nДавайте расскажу вам ещё что-нибудь про квартиру?",
+        "createdAt": "2026-04-23T12:00:01Z",
+        "dataObjectVisual": null,
+        "suggestedOptions": [
+            {
+                "title": "Расскажи о погоде",
+                "type": "query"
+            },
+            {
+                "title": "Покажи примеры",
+                "type": "query"
+            },
+            {
+                "title": "Помоги с задачей",
+                "type": "query"
+            }
+        ],
+        "suggestedOptionsStrict": [
+            {
+                "type": "premise",
+                "label": "Квартира №3, 2-комн., 62.4 м²",
+                "payload": {
+                    "id": 315
+                }
+            },
+            {
+                "type": "premise",
+                "label": "Квартира №5, 1-комн., 45.0 м²",
+                "payload": {
+                    "id": 318
+                }
+            }
+        ],
+        "selectedOption": null
+    }
+}

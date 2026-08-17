@@ -1,0 +1,3334 @@
+{
+    "chatId": "f5de9375-3177-48c0-8558-201285abe3d2",
+    "userId": "a220e808-b6e0-4674-b774-5e2c56e8f9a4",
+    "title": "Для себя",
+    "status": "ACTIVE",
+    "createdAt": "2026-06-09T19:00:34.945092",
+    "updatedAt": "2026-06-09T19:01:02.111685",
+    "state": {
+        "searchParameters": {
+            "areaRange": null,
+            "budget": {
+                "min": 20000000,
+                "max": 30000000,
+                "exact": null
+            },
+            "roomsInterested": null,
+            "sectionsInterested": null,
+            "buildingsInterested": null,
+            "floor": null
+        },
+        "contacts": null,
+        "secondarySearchParameter": {
+            "paymentMethod": null,
+            "purchaseTimeframe": null,
+            "purchasePurpose": "Для себя"
+        },
+        "selectedEstates": null,
+        "salesContext": {
+            "dialogSummary": null,
+            "objections": null,
+            "nextStep": "ask:rooms"
+        }
+    },
+    "messages": [
+        {
+            "messageId": "a1c2d3e4-f5a6-4789-b012-3456789abcde",
+            "chatId": "f5de9375-3177-48c0-8558-201285abe3d2",
+            "role": "USER",
+            "content": "Покажи расположение комплекса",
+            "createdAt": "2026-06-09T19:00:30.078217",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null,
+            "suggestedOptionsStrict": null
+        },
+        {
+            "messageId": "b2c3d4e5-f6a7-4890-c123-456789abcdef",
+            "chatId": "f5de9375-3177-48c0-8558-201285abe3d2",
+            "role": "ASSISTANT",
+            "content": "Вот карта с расположением комплекса и ближайшей инфраструктурой. Можете посмотреть парки, станции метро и контакты офиса продаж.",
+            "createdAt": "2026-06-09T19:00:31.079891",
+            "dataObjectVisual": {
+                "map": {
+                    "filter": [
+                        {
+                            "label": "Парки",
+                            "type": "parks",
+                            "icon": "park.svg",
+                            "count": 3
+                        },
+                        {
+                            "label": "Метро",
+                            "type": "metro",
+                            "icon": "metro.svg",
+                            "count": 2
+                        },
+                        {
+                            "label": "Супермаркеты",
+                            "type": "supermarket",
+                            "icon": "supermarket.svg",
+                            "count": 10
+                        },
+                        {
+                            "label": "Школы",
+                            "type": "school",
+                            "icon": "school.svg",
+                            "count": 0
+                        }
+                    ],
+                    "location": {
+                        "zoom": 16,
+                        "center": [51.702115, 39.193415],
+                        "markers": [
+                            {
+                                "id": 69,
+                                "coords": [51.702631, 39.193129],
+                                "icon": {
+                                    "type": "all",
+                                    "src": "/webicons/yandex-map/pin.svg",
+                                    "size": {
+                                        "width": 58,
+                                        "height": 59
+                                    }
+                                },
+                                "type": "all",
+                                "position": "top",
+                                "balloon": {
+                                    "title": "Тут важный текст",
+                                    "image": null,
+                                    "text": ""
+                                },
+                                "notСluster": true,
+                                "zIndex": 2,
+                                "modifyClass": "object"
+                            },
+                            {
+                                "id": 70,
+                                "coords": [52.702631, 39.193129],
+                                "icon": {
+                                    "type": "all",
+                                    "src": "/webicons/yandex-map/pin.svg",
+                                    "size": {
+                                        "width": 58,
+                                        "height": 59
+                                    }
+                                },
+                                "type": "all",
+                                "position": "top",
+                                "balloon": {
+                                    "title": "Тут важный текст",
+                                    "image": null,
+                                    "text": ""
+                                },
+                                "notСluster": true,
+                                "zIndex": 2,
+                                "modifyClass": "object"
+                            },
+                            {
+                                "id": 71,
+                                "coords": [51.705631, 39.198129],
+                                "icon": {
+                                    "type": "parks",
+                                    "src": "/webicons/yandex-map/pin.svg",
+                                    "size": {
+                                        "width": 58,
+                                        "height": 59
+                                    }
+                                },
+                                "type": "parks",
+                                "position": "top",
+                                "balloon": {
+                                    "title": "Парк",
+                                    "image": null,
+                                    "text": ""
+                                },
+                                "notСluster": true,
+                                "zIndex": 1,
+                                "modifyClass": "parks"
+                            },
+                            {
+                                "id": 72,
+                                "coords": [51.699631, 39.188129],
+                                "icon": {
+                                    "type": "metro",
+                                    "src": "/webicons/yandex-map/pin.svg",
+                                    "size": {
+                                        "width": 58,
+                                        "height": 59
+                                    }
+                                },
+                                "type": "metro",
+                                "position": "top",
+                                "balloon": {
+                                    "title": "Метро",
+                                    "image": null,
+                                    "text": ""
+                                },
+                                "notСluster": true,
+                                "zIndex": 1,
+                                "modifyClass": "metro"
+                            }
+                        ]
+                    },
+                    "contacts": [
+                        {
+                            "markerId": "69",
+                            "title": "Офис продаж на объекте",
+                            "address": "Санкт-Петербург, ул. Литераторов, 15",
+                            "times": ["Пн - Пт: 10:00 - 19:00", "Сб - Вс: Выходной"],
+                            "phone": "8 (800) 250-24-35",
+                            "email": "object@dev.ru"
+                        },
+                        {
+                            "markerId": "70",
+                            "title": "Офис продаж ",
+                            "address": "Санкт-Петербург, ул. Литераторов, 34",
+                            "times": ["Пн - Пт: 10:00 - 19:00", "Сб - Вс: Выходной"],
+                            "phone": "8 (800) 250-24-35",
+                            "email": "object-long-email@dev.ru"
+                        }
+                    ]
+                },
+                "miniInfo": {
+                    "title": "Расположение"
+                }
+            },
+            "suggestedOptions": null,
+            "selectedOption": null,
+            "suggestedOptionsStrict": null,
+            "rating": null
+        },
+        {
+            "messageId": "b311ae6e-dfcc-4165-b4ce-67b869fa3561",
+            "chatId": "f5de9375-3177-48c0-8558-201285abe3d2",
+            "role": "USER",
+            "content": "Для себя",
+            "createdAt": "2026-06-09T19:00:44.078217",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null,
+            "suggestedOptionsStrict": null
+        },
+        {
+            "messageId": "673be8ea-40e8-448a-b4b4-c1f0e05c8e94",
+            "chatId": "f5de9375-3177-48c0-8558-201285abe3d2",
+            "role": "ASSISTANT",
+            "content": "Отлично, квартира для себя — это всегда особенно важно, чтобы всё было идеально под ваш образ жизни. Чтобы подобрать лучшие варианты, давайте определимся с бюджетом. Какой диапазон стоимости квартиры вас интересует?",
+            "createdAt": "2026-06-09T19:00:44.079891",
+            "dataObjectVisual": null,
+            "suggestedOptions": [
+                {
+                    "title": "до 20 млн ₽",
+                    "type": "query"
+                },
+                {
+                    "title": "20–30 млн ₽",
+                    "type": "query"
+                },
+                {
+                    "title": "30–40 млн ₽",
+                    "type": "query"
+                },
+                {
+                    "title": "от 40 млн ₽",
+                    "type": "query"
+                }
+            ],
+            "selectedOption": null,
+            "suggestedOptionsStrict": null,
+            "rating": "DISLIKE"
+        },
+        {
+            "messageId": "233ce37f-8ada-41ec-88fa-a43294c4f4b4",
+            "chatId": "f5de9375-3177-48c0-8558-201285abe3d2",
+            "role": "USER",
+            "content": "20–30 млн ₽",
+            "createdAt": "2026-06-09T19:01:02.109597",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null,
+            "suggestedOptionsStrict": null
+        },
+        {
+            "messageId": "0714526f-a8c0-4945-a978-6cf97e503c16",
+            "chatId": "f5de9375-3177-48c0-8558-201285abe3d2",
+            "role": "ASSISTANT",
+            "content": "Отлично, бюджет 20–30 млн ₽ — это очень хороший диапазон, у нас есть несколько интересных вариантов. Чтобы подобрать квартиру, которая идеально подойдёт именно вам, давайте уточним: сколько комнат вы рассматриваете — однокомнатную или двухкомнатную?",
+            "createdAt": "2026-06-09T19:01:02.110855",
+            "dataObjectVisual": null,
+            "suggestedOptions": [
+                {
+                    "title": "1-комн.",
+                    "type": "query"
+                },
+                {
+                    "title": "2-комн.",
+                    "type": "query"
+                },
+                {
+                    "title": "Показать варианты",
+                    "type": "query"
+                }
+            ],
+            "selectedOption": null,
+            "suggestedOptionsStrict": null,
+            "rating": "LIKE"
+        },
+        {
+            "messageId": "ef8ba6be-1246-4dca-ba84-13a06848424c",
+            "chatId": "f5de9375-3177-48c0-8558-201285abe3d2",
+            "role": "USER",
+            "content": "Показать варианты",
+            "createdAt": "2026-06-09T19:01:15.195156",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null,
+            "suggestedOptionsStrict": null
+        },
+        {
+            "messageId": "0b164623-7554-4e76-84fc-94d803a8d10e",
+            "chatId": "f5de9375-3177-48c0-8558-201285abe3d2",
+            "role": "ASSISTANT",
+            "content": "Я подобрал для вас 35 вариантов в бюджете 20–30 млн — среди них есть и уютные 1-комнатные, и просторные 2-комнатные. Это самые интересные лоты, которые сейчас доступны. Можем детальнее посмотреть генплан комплекса, акции и условия покупки, а если захотите скорректировать параметры (бюджет, комнатность, площадь) — тоже без проблем. Какой из вариантов вам больше откликнулся?",
+            "createdAt": "2026-06-09T19:01:15.196568",
+            "dataObjectVisual": {
+                "premises": {
+                    "list": [
+                        {
+                            "id": 998,
+                            "area": 44.26,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/d32bc5f911e0425e83ade53940d2e81757ff9454.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 21168840,
+                            "rooms": 1,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "1к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "Двор",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 11,
+                                    "title": "Да",
+                                    "group_title": "Вид во двор"
+                                },
+                                {
+                                    "id": 30,
+                                    "title": "1",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "4",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 1к, №276"
+                        },
+                        {
+                            "id": 806,
+                            "area": 53.21,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/d750b36a7948facd3b120c2471780bdc5bd0e8ee.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 21790139,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "Да",
+                                    "group_title": "Кухня-гостиная"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "2",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №84"
+                        },
+                        {
+                            "id": 728,
+                            "area": 52.36,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/b660e7fab946bdf7d387127343bf4f02fc69c0d1.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 21867431,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "Да",
+                                    "group_title": "Кухня-гостиная"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 30,
+                                    "title": "1",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 48,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 2"
+                                }
+                            ],
+                            "section": "1",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №6"
+                        },
+                        {
+                            "id": 724,
+                            "area": 52.97,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/649e28461dbf4a2149f0c54336fc81cd7581543d.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 22345286,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "Да",
+                                    "group_title": "Кухня-гостиная"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "1",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №2"
+                        },
+                        {
+                            "id": 807,
+                            "area": 52.82,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/7e07ed9043980d576426ebb4dfecef0f8b8bf81c.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 22498831,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "Да",
+                                    "group_title": "Кухня-гостиная"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "2",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №85"
+                        },
+                        {
+                            "id": 824,
+                            "area": 53.1,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/9ad5df37dddaabedcecca6c5295d75bc0bfbef95.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 4
+                            },
+                            "price": 22654631,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "2",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №102"
+                        },
+                        {
+                            "id": 833,
+                            "area": 53.04,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/57012eb5b8f78c4cd14cd3ad2ca0098a67271f2d.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 5
+                            },
+                            "price": 22814894,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "2",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №111"
+                        },
+                        {
+                            "id": 1062,
+                            "area": 54.74,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/6ea6b1e932e5aa09b3b73fa6d020c40bc14c855e.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 22860114,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "5",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №340"
+                        },
+                        {
+                            "id": 897,
+                            "area": 54.54,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/2967f1c99845c622316b12a0330fad5d3d703d7a.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 23230027,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №175"
+                        },
+                        {
+                            "id": 907,
+                            "area": 54.48,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/d1ca6d359c3dc1e8ae2d12fa86c8cf023de71dcb.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 3
+                            },
+                            "price": 23462062,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №185"
+                        },
+                        {
+                            "id": 760,
+                            "area": 52.11,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/5acf5d37dbeeda8bb4f0bee26bec034fa57fb5f6.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 6
+                            },
+                            "price": 23538336,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "Да",
+                                    "group_title": "Кухня-гостиная"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 30,
+                                    "title": "1",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 48,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 2"
+                                }
+                            ],
+                            "section": "1",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №38"
+                        },
+                        {
+                            "id": 839,
+                            "area": 51.09,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/a3a304d4468fe481da050218b3364864f3b526a4.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 6
+                            },
+                            "price": 23667881,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "Двор",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 11,
+                                    "title": "Да",
+                                    "group_title": "Вид во двор"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                }
+                            ],
+                            "section": "2",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №117"
+                        },
+                        {
+                            "id": 843,
+                            "area": 52.56,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/0b26e470bde4e54add7ecc177ac4545ab26ba338.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 6
+                            },
+                            "price": 23725974,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "2",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №121"
+                        },
+                        {
+                            "id": 917,
+                            "area": 54.42,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/b487d96d7cb5ebadc1f48809979c2ceab9869dee.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 4
+                            },
+                            "price": 23832648,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №195"
+                        },
+                        {
+                            "id": 927,
+                            "area": 54.36,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/afa3ed69632384ab910e9b161220b94b240f8877.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 5
+                            },
+                            "price": 24035974,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №205"
+                        },
+                        {
+                            "id": 857,
+                            "area": 50.97,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/aee4aa410fdb478f09c9e8dd3b9cc81e4dd6406e.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 8
+                            },
+                            "price": 24040652,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "Двор",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 11,
+                                    "title": "Да",
+                                    "group_title": "Вид во двор"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                }
+                            ],
+                            "section": "2",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №135"
+                        },
+                        {
+                            "id": 784,
+                            "area": 51.92,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/0a00bba861cabb5e71465c6d7f534de15422535e.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 9
+                            },
+                            "price": 24126773,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "Да",
+                                    "group_title": "Кухня-гостиная"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 30,
+                                    "title": "1",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 48,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 2"
+                                },
+                                {
+                                    "id": 300,
+                                    "title": "",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 301,
+                                    "title": "",
+                                    "group_title": "Открытая лоджия"
+                                },
+                                {
+                                    "id": 302,
+                                    "title": "",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "1",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №62"
+                        },
+                        {
+                            "id": 937,
+                            "area": 54.3,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/64d0ae24e9278d2c3b7861ddf1fca63ca987d270.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 6
+                            },
+                            "price": 24249523,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №215"
+                        },
+                        {
+                            "id": 869,
+                            "area": 52.83,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/0c9b0677a5ada2476105f2be36bb6dfcbdea1d16.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 9
+                            },
+                            "price": 24597796,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "2",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №147"
+                        },
+                        {
+                            "id": 957,
+                            "area": 54.17,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/41a2efabf04d4291f5cf11750c0e48ea4f5dd77e.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 8
+                            },
+                            "price": 24677697,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №235"
+                        },
+                        {
+                            "id": 1060,
+                            "area": 57.96,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/0c09d0b63ad64d2e482df45c2a4fcb0f1e3b8183.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 24903354,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                }
+                            ],
+                            "section": "5",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №338"
+                        },
+                        {
+                            "id": 870,
+                            "area": 52.4,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/28fcc7874be74342edf47da737e710f8046a5ffc.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 9
+                            },
+                            "price": 25080137,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                }
+                            ],
+                            "section": "2",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №148"
+                        },
+                        {
+                            "id": 901,
+                            "area": 57.19,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/f92d11ed741ed87cad654908db59a83167652f11.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 25268368,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                },
+                                {
+                                    "id": 817,
+                                    "title": "Да",
+                                    "group_title": "Угловое окно"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №179"
+                        },
+                        {
+                            "id": 730,
+                            "area": 63.09,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/4ad95d2959324720120b66e001c81e4bac7c6460.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 25332513,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "Да",
+                                    "group_title": "Кухня-гостиная"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "1",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №8"
+                        },
+                        {
+                            "id": 902,
+                            "area": 63.32,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/e7c387bf36acedebe3c3b4e4e2c63b7028ba1494.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 25471237,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "Двор",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 11,
+                                    "title": "Да",
+                                    "group_title": "Вид во двор"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №180"
+                        },
+                        {
+                            "id": 921,
+                            "area": 56.71,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/2ef5aebd3f61c01a34acda32c870574def896f82.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 4
+                            },
+                            "price": 25815570,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                },
+                                {
+                                    "id": 817,
+                                    "title": "Да",
+                                    "group_title": "Угловое окно"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №199"
+                        },
+                        {
+                            "id": 738,
+                            "area": 63.03,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/28cecc4bc5f4e630bb61e6f7295f66dd4a9849b1.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 3
+                            },
+                            "price": 26349951,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "Да",
+                                    "group_title": "Кухня-гостиная"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "1",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №16"
+                        },
+                        {
+                            "id": 1061,
+                            "area": 61.37,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/4635f6a4ad80dbea610718d2fe3fcf1d4a28fdb0.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 2
+                            },
+                            "price": 26552980,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "Закрытый",
+                                    "group_title": "Балкон 1"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "Да",
+                                    "group_title": "Закрытый балкон"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 1178,
+                                    "title": "Да",
+                                    "group_title": "Терраса"
+                                }
+                            ],
+                            "section": "5",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №339"
+                        },
+                        {
+                            "id": 746,
+                            "area": 62.97,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/53f3acf42b10fe73f949fe2408bf1289cc6b5006.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 4
+                            },
+                            "price": 26613922,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "Да",
+                                    "group_title": "Кухня-гостиная"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "1",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №24"
+                        },
+                        {
+                            "id": 754,
+                            "area": 62.91,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/d962c15d56d05eac118baf5ce5981328b8d193a7.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 5
+                            },
+                            "price": 26928949,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "Да",
+                                    "group_title": "Кухня-гостиная"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "1",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №32"
+                        },
+                        {
+                            "id": 941,
+                            "area": 56.96,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/ca8120ad845fe50bbab37817441429a1350449b2.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 6
+                            },
+                            "price": 26976913,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                },
+                                {
+                                    "id": 817,
+                                    "title": "Да",
+                                    "group_title": "Угловое окно"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №219"
+                        },
+                        {
+                            "id": 912,
+                            "area": 63.25,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/0e27996b245ecdf30d367b94da63f57358c2ef2a.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 3
+                            },
+                            "price": 27042968,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "Двор",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 11,
+                                    "title": "Да",
+                                    "group_title": "Вид во двор"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №190"
+                        },
+                        {
+                            "id": 942,
+                            "area": 63.07,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/18095b09dec7761c0f5b4fcc09cc1e5c59eae759.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 6
+                            },
+                            "price": 27783059,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "Двор",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 11,
+                                    "title": "Да",
+                                    "group_title": "Вид во двор"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №220"
+                        },
+                        {
+                            "id": 961,
+                            "area": 56.84,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/ec07cdfed4b29dbdf2dbbf25573431c8d12e747b.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 8
+                            },
+                            "price": 28007653,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "Улица",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "Да",
+                                    "group_title": "Вид на улицу"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                },
+                                {
+                                    "id": 817,
+                                    "title": "Да",
+                                    "group_title": "Угловое окно"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №239"
+                        },
+                        {
+                            "id": 962,
+                            "area": 62.89,
+                            "plan": [
+                                {
+                                    "text": "2D план",
+                                    "image": "2026/05/20/a8b3509a763e41068a7ed24408e1f2782b80f99c.jpg"
+                                }
+                            ],
+                            "block": "I очередь - квартиры",
+                            "floor": {
+                                "total": 11,
+                                "value": 8
+                            },
+                            "price": 28260660,
+                            "rooms": 2,
+                            "state": {
+                                "title": "Свободно",
+                                "available": true
+                            },
+                            "title": "2к",
+                            "options": [
+                                {
+                                    "id": 1,
+                                    "title": "Европланировка",
+                                    "group_title": "Общая группа"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "2",
+                                    "group_title": "Кол-во санузлов  общее"
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "Двор",
+                                    "group_title": "Куда выходят окна"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "Предчистовая",
+                                    "group_title": "Отделка"
+                                },
+                                {
+                                    "id": 11,
+                                    "title": "Да",
+                                    "group_title": "Вид во двор"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "Да",
+                                    "group_title": "Мастер-спальня"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "Да",
+                                    "group_title": "Разнесенные спальни"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "Закрытая",
+                                    "group_title": "Лоджия"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "Да",
+                                    "group_title": "Окна на две стороны"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "Да",
+                                    "group_title": "Закрытая лоджия"
+                                }
+                            ],
+                            "section": "3",
+                            "delivery": {
+                                "label": "Срок сдачи",
+                                "title": "4 кв. 2028"
+                            },
+                            "showPrice": true,
+                            "description": "STAVNI Обводный, 2к, №240"
+                        }
+                    ],
+                    "filters": [
+                        {
+                            "type": "checkbox",
+                            "view": "block",
+                            "items": [
+                                {
+                                    "id": 1,
+                                    "title": "Ст",
+                                    "value": 0,
+                                    "checked": false,
+                                    "disabled": false
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "1к",
+                                    "value": 1,
+                                    "checked": false,
+                                    "disabled": false
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "2к",
+                                    "value": 2,
+                                    "checked": false,
+                                    "disabled": false
+                                },
+                                {
+                                    "id": 4,
+                                    "title": "3к",
+                                    "value": 3,
+                                    "checked": false,
+                                    "disabled": false
+                                }
+                            ],
+                            "label": "Комнатность",
+                            "category": "rooms"
+                        },
+                        {
+                            "max": 43137686,
+                            "min": 11332155,
+                            "type": "slider",
+                            "label": "Стоимость квартиры, ₽",
+                            "value": [20000000, 30000000],
+                            "category": "price"
+                        },
+                        {
+                            "max": 92.99,
+                            "min": 21.79,
+                            "type": "slider",
+                            "label": "Площадь общая, м²",
+                            "value": [21.79, 92.99],
+                            "category": "area"
+                        }
+                    ]
+                }
+            },
+            "suggestedOptions": [
+                {
+                    "title": "Оставить заявку",
+                    "type": "contact_request"
+                },
+                {
+                    "title": "Ни один из вариантов",
+                    "type": "query"
+                },
+                {
+                    "title": "Изменить бюджет",
+                    "type": "query"
+                },
+                {
+                    "title": "Уточнить площадь",
+                    "type": "query"
+                },
+                {
+                    "title": "Уточнить этаж",
+                    "type": "query"
+                },
+                {
+                    "title": "Генплан",
+                    "type": "query"
+                },
+                {
+                    "title": "Акции",
+                    "type": "query"
+                },
+                {
+                    "title": "Как купить",
+                    "type": "query"
+                }
+            ],
+            "selectedOption": null,
+            "suggestedOptionsStrict": [
+                {
+                    "type": "premise",
+                    "label": "1-комн., 44.26 м², №276",
+                    "payload": {
+                        "id": 998
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 53.21 м², №84",
+                    "payload": {
+                        "id": 806
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 52.36 м², №6",
+                    "payload": {
+                        "id": 728
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 52.97 м², №2",
+                    "payload": {
+                        "id": 724
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 52.82 м², №85",
+                    "payload": {
+                        "id": 807
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 53.10 м², №102",
+                    "payload": {
+                        "id": 824
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 53.04 м², №111",
+                    "payload": {
+                        "id": 833
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 54.74 м², №340",
+                    "payload": {
+                        "id": 1062
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 54.54 м², №175",
+                    "payload": {
+                        "id": 897
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 54.48 м², №185",
+                    "payload": {
+                        "id": 907
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 52.11 м², №38",
+                    "payload": {
+                        "id": 760
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 51.09 м², №117",
+                    "payload": {
+                        "id": 839
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 52.56 м², №121",
+                    "payload": {
+                        "id": 843
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 54.42 м², №195",
+                    "payload": {
+                        "id": 917
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 54.36 м², №205",
+                    "payload": {
+                        "id": 927
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 50.97 м², №135",
+                    "payload": {
+                        "id": 857
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 51.92 м², №62",
+                    "payload": {
+                        "id": 784
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 54.30 м², №215",
+                    "payload": {
+                        "id": 937
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 52.83 м², №147",
+                    "payload": {
+                        "id": 869
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 54.17 м², №235",
+                    "payload": {
+                        "id": 957
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 57.96 м², №338",
+                    "payload": {
+                        "id": 1060
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 52.40 м², №148",
+                    "payload": {
+                        "id": 870
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 57.19 м², №179",
+                    "payload": {
+                        "id": 901
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 63.09 м², №8",
+                    "payload": {
+                        "id": 730
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 63.32 м², №180",
+                    "payload": {
+                        "id": 902
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 56.71 м², №199",
+                    "payload": {
+                        "id": 921
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 63.03 м², №16",
+                    "payload": {
+                        "id": 738
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 61.37 м², №339",
+                    "payload": {
+                        "id": 1061
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 62.97 м², №24",
+                    "payload": {
+                        "id": 746
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 62.91 м², №32",
+                    "payload": {
+                        "id": 754
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 56.96 м², №219",
+                    "payload": {
+                        "id": 941
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 63.25 м², №190",
+                    "payload": {
+                        "id": 912
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 63.07 м², №220",
+                    "payload": {
+                        "id": 942
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 56.84 м², №239",
+                    "payload": {
+                        "id": 961
+                    }
+                },
+                {
+                    "type": "premise",
+                    "label": "2-комн., 62.89 м², №240",
+                    "payload": {
+                        "id": 962
+                    }
+                }
+            ],
+            "rating": null
+        }
+    ],
+    "estateComplexId": 1,
+    "isFavorite": false,
+    "hasOlder": false,
+    "hasNewer": false
+}

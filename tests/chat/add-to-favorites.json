@@ -1,0 +1,13 @@
+{
+    "chatId": "90abcdef-1234-5678-9012-345678901234",
+    "userId": "550e8400-e29b-41d4-a716-446655440000",
+    "title": "Мой чат",
+    "status": "ACTIVE",
+    "createdAt": "2026-04-23T12:00:00Z",
+    "updatedAt": "2026-04-23T14:30:00Z",
+    "state": null,
+    "messages": [],
+    "messageCount": 5,
+    "estateComplexId": null,
+    "isFavorite": true
+}

@@ -1,0 +1,12 @@
+{
+    "chatId": "f6789012-abcd-ef34-5678-901234567890",
+    "userId": "550e8400-e29b-41d4-a716-446655440000",
+    "title": "Самый новый чат",
+    "status": "ACTIVE",
+    "createdAt": "2026-05-15T12:00:00Z",
+    "updatedAt": "2026-05-15T12:00:00Z",
+    "state": null,
+    "messages": [],
+    "messageCount": 0,
+    "estateComplexId": null
+}

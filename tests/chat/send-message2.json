@@ -1,0 +1,39 @@
+{
+    "userMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440018",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "USER",
+        "content": "Ты всё показал, круто, спасибо!",
+        "createdAt": "2026-04-23T12:00:00Z",
+        "dataObjectVisual": null,
+        "suggestedOptions": null,
+        "suggestedOptionsStrict": null,
+        "selectedOption": null
+    },
+    "assistantMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440019",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "ASSISTANT",
+        "content": "Я всё показал, пожалуйста",
+        "createdAt": "2026-04-23T12:00:01Z",
+        "dataObjectVisual": null,
+        "suggestedOptions": [],
+        "suggestedOptionsStrict": [
+            {
+                "type": "premise",
+                "label": "Квартира №3, 2-комн., 62.4 м²",
+                "payload": {
+                    "id": 315
+                }
+            },
+            {
+                "type": "premise",
+                "label": "Квартира №5, 1-комн., 45.0 м²",
+                "payload": {
+                    "id": 318
+                }
+            }
+        ],
+        "selectedOption": null
+    }
+}

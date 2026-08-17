@@ -1,0 +1,118 @@
+{
+    "userMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440014",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "USER",
+        "content": "Покажи генплан",
+        "createdAt": "2026-04-23T12:00:00Z",
+        "dataObjectVisual": null,
+        "suggestedOptions": null,
+        "suggestedOptionsStrict": null,
+        "selectedOption": null
+    },
+    "assistantMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440015",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "ASSISTANT",
+        "content": "Вот генплан! Чем могу вам помочь?",
+        "createdAt": "2026-04-23T12:00:01Z",
+        "dataObjectVisual": {
+            "genplan": {
+                "render": "/images/genplan.jpg",
+                "shift": 50,
+                "elements": [
+                    {
+                        "id": "1",
+                        "title": "Корпус 1",
+                        "position": {
+                            "left": 35,
+                            "top": 42
+                        },
+                        "query": "Покажи квартиры первого корпуса"
+                    },
+                    {
+                        "id": "2",
+                        "title": "Корпус 2",
+                        "position": {
+                            "left": 50,
+                            "top": 34
+                        },
+                        "query": "Покажи квартиры второго корпуса"
+                    },
+                    {
+                        "id": "3",
+                        "title": "Корпус 3",
+                        "position": {
+                            "left": 66,
+                            "top": 39
+                        },
+                        "query": "Покажи квартиры третьего корпуса"
+                    }
+                ],
+                "pointers": [
+                    {
+                        "id": "1",
+                        "type": "panorama",
+                        "uid": "d83e57115b428b0fde96cc05cdc29ef3_3d",
+                        "position": {
+                            "left": 50,
+                            "top": 46
+                        }
+                    },
+                    {
+                        "id": "2",
+                        "type": "text",
+                        "text": "Парковка",
+                        "position": {
+                            "left": 48,
+                            "top": 65
+                        }
+                    }
+                ]
+            },
+            "miniInfo": {
+                "image": "/images/render.jpg",
+                "title": "Генплан",
+                "fullscreen": false
+            }
+        },
+        "suggestedOptions": [
+            {
+                "title": "Расскажи о погоде",
+                "type": "query"
+            },
+            {
+                "title": "Покажи примеры",
+                "type": "query"
+            },
+            {
+                "title": "Помоги с задачей",
+                "type": "query"
+            }
+        ],
+        "suggestedOptionsStrict": [
+            {
+                "type": "genplan",
+                "label": "Квартира №3, 2-комн., 62.4 м²",
+                "payload": {
+                    "id": 1
+                }
+            },
+            {
+                "type": "genplan",
+                "label": "Квартира №5, 1-комн., 45.0 м²",
+                "payload": {
+                    "id": 2
+                }
+            },
+            {
+                "type": "genplan",
+                "label": "Квартира №5, 1-комн., 45.0 м²",
+                "payload": {
+                    "id": 3
+                }
+            }
+        ],
+        "selectedOption": null
+    }
+}

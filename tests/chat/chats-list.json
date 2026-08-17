@@ -1,0 +1,50 @@
+{
+    "content": [
+        {
+            "chatId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+            "title": "Демо-чат",
+            "status": "ACTIVE",
+            "createdAt": "2026-05-15T10:00:00Z",
+            "updatedAt": "2026-05-21T12:30:00Z",
+            "state": null
+        },
+        {
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "title": "Второй чат",
+            "status": "ACTIVE",
+            "createdAt": "2026-01-14T09:00:00Z",
+            "updatedAt": "2026-01-20T09:00:00Z",
+            "state": null
+        },
+        {
+            "chatId": "c3d4e5f6-7890-abcd-ef12-345678901234",
+            "title": "Сегодня утром",
+            "status": "ACTIVE",
+            "createdAt": "2026-05-14T08:15:00Z",
+            "updatedAt": "2026-05-20T08:15:00Z",
+            "state": null
+        },
+        {
+            "chatId": "d4e5f678-90ab-cdef-1234-567890123456",
+            "title": "Сегодня днём",
+            "status": "ACTIVE",
+            "createdAt": "2026-05-14T14:42:30Z",
+            "updatedAt": "2026-05-14T16:05:12Z",
+            "state": null,
+            "isFavorite": true
+        },
+        {
+            "chatId": "e5f67890-abcd-ef12-3456-789012345678",
+            "title": "Вчера вечером",
+            "status": "ACTIVE",
+            "createdAt": "2026-05-13T18:20:00Z",
+            "updatedAt": "2026-05-13T19:00:00Z",
+            "state": null,
+            "isFavorite": true
+        }
+    ],
+    "currentPage": 0,
+    "pageSize": 5,
+    "totalElements": 14,
+    "totalPages": 3
+}

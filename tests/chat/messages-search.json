@@ -1,0 +1,45 @@
+{
+    "results": [
+        {
+            "messageId": "550e8400-e29b-41d4-a716-446655440001",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "title": "Мой чат",
+            "content": "Сколько стоит квартира на улице Ленина?",
+            "createdAt": "2026-05-20T15:30:00Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null,
+            "suggestedOptionsStrict": null,
+            "isFavorite": true
+        },
+        {
+            "messageId": "550e8400-e29b-41d4-a716-446655440002",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "title": "Мой чат",
+            "content": "Квартира на Ленина стоит 5 млн рублей",
+            "createdAt": "2026-05-20T15:31:00Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null,
+            "suggestedOptionsStrict": null,
+            "isFavorite": true
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440010",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Сколько стоит двушка 62 м²?",
+            "createdAt": "2026-04-23T12:00:10.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null,
+            "suggestedOptionsStrict": null,
+            "isFavorite": false
+        }
+    ],
+    "hasOlder": false,
+    "hasNewer": true,
+    "total": 3
+}

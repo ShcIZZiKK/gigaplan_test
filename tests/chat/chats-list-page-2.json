@@ -1,0 +1,39 @@
+{
+    "chats": [
+        {
+            "chatId": "abcdef12-3456-7890-1234-567890123456",
+            "title": "Идеи для продукта",
+            "status": "ACTIVE",
+            "createdAt": "2026-02-08T15:45:00Z",
+            "updatedAt": "2026-02-10T08:00:00Z",
+            "state": null
+        },
+        {
+            "chatId": "bcdef123-4567-8901-2345-678901234567",
+            "title": "Технический разбор",
+            "status": "ACTIVE",
+            "createdAt": "2026-04-30T22:00:00Z",
+            "updatedAt": "2026-05-01T10:15:00Z",
+            "state": null
+        },
+        {
+            "chatId": "cdef1234-5678-9012-3456-789012345678",
+            "title": "Встреча с командой",
+            "status": "ACTIVE",
+            "createdAt": "2026-01-03T09:00:00Z",
+            "updatedAt": "2026-01-03T17:45:22Z",
+            "state": null
+        },
+        {
+            "chatId": "def12345-6789-0123-4567-890123456789",
+            "title": "Аналитика за неделю",
+            "status": "ACTIVE",
+            "createdAt": "2026-05-05T13:20:00Z",
+            "updatedAt": "2026-05-05T13:20:00Z",
+            "state": null
+        }
+    ],
+    "hasOlder": false,
+    "hasNewer": true,
+    "total": 14
+}

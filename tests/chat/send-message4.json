@@ -1,0 +1,582 @@
+{
+    "userMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440012",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "USER",
+        "content": "Покажи параметрический выборщик",
+        "createdAt": "2026-04-23T12:00:00Z",
+        "dataObjectVisual": null,
+        "suggestedOptions": null,
+        "suggestedOptionsStrict": null,
+        "selectedOption": null
+    },
+    "assistantMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440013",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "ASSISTANT",
+        "content": "Вот подборка квартир! Чем могу вам помочь?",
+        "createdAt": "2026-04-23T12:00:01Z",
+        "dataObjectVisual": {
+            "premises": {
+                "list": [
+                    {
+                        "id": 315,
+                        "title": "2-комнатная",
+                        "plan": [
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_8740ec2494a64d25b78ee5e23a8cdf07_1d834fc1.png?modified=1763567431",
+                                "text": "3д вид"
+                            },
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_81b922e0d5ed8ec36aaed8566b4352c7_9499d808.jpg?modified=1763567431",
+                                "text": "2д вид"
+                            }
+                        ],
+                        "area": 31.8,
+                        "price": 3229664,
+                        "oldPrice": 3449664,
+                        "favorite": false,
+                        "showPrice": true,
+                        "state": {
+                            "available": true,
+                            "title": "Свободно"
+                        },
+                        "block": "5",
+                        "section": "1",
+                        "floor": {
+                            "value": 2,
+                            "total": 8
+                        },
+                        "delivery": {
+                            "label": "Год сдачи",
+                            "title": "2027"
+                        },
+                        "options": [
+                            {
+                                "id": 3,
+                                "title": "Мастер спальня"
+                            },
+                            {
+                                "id": 11,
+                                "title": "Два санузла"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Вид на парк"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Красивый балкон"
+                            }
+                        ],
+                        "query": "Покажи квартиру"
+                    },
+                    {
+                        "id": 316,
+                        "title": "2-комнатная",
+                        "plan": [
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_8740ec2494a64d25b78ee5e23a8cdf07_1d834fc1.png?modified=1763567431",
+                                "text": "3д вид"
+                            },
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_81b922e0d5ed8ec36aaed8566b4352c7_9499d808.jpg?modified=1763567431",
+                                "text": "2д вид"
+                            }
+                        ],
+                        "area": 33,
+                        "price": 3329664,
+                        "oldPrice": null,
+                        "favorite": false,
+                        "showPrice": true,
+                        "state": {
+                            "available": false,
+                            "title": "Свободно"
+                        },
+                        "block": "5",
+                        "section": "1",
+                        "floor": {
+                            "value": 2,
+                            "total": 8
+                        },
+                        "delivery": {
+                            "label": "Год сдачи",
+                            "title": "2027"
+                        },
+                        "options": [
+                            {
+                                "id": 3,
+                                "title": "Мастер спальня"
+                            },
+                            {
+                                "id": 11,
+                                "title": "Два санузла"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Вид на парк"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Красивый балкон"
+                            }
+                        ],
+                        "query": "Покажи квартиру"
+                    },
+                    {
+                        "id": 317,
+                        "title": "1-комнатная",
+                        "plan": [
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_8740ec2494a64d25b78ee5e23a8cdf07_1d834fc1.png?modified=1763567431",
+                                "text": "3д вид"
+                            },
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_81b922e0d5ed8ec36aaed8566b4352c7_9499d808.jpg?modified=1763567431",
+                                "text": "2д вид"
+                            }
+                        ],
+                        "area": 27,
+                        "price": 1229664,
+                        "oldPrice": 1349664,
+                        "favorite": false,
+                        "showPrice": true,
+                        "state": {
+                            "available": true,
+                            "title": "Свободно"
+                        },
+                        "block": "5",
+                        "section": "1",
+                        "floor": {
+                            "value": 2,
+                            "total": 8
+                        },
+                        "delivery": {
+                            "label": "Год сдачи",
+                            "title": "2027"
+                        },
+                        "options": [
+                            {
+                                "id": 3,
+                                "title": "Мастер спальня"
+                            },
+                            {
+                                "id": 11,
+                                "title": "Два санузла"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Вид на парк"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Красивый балкон"
+                            }
+                        ],
+                        "query": "Покажи квартиру"
+                    },
+                    {
+                        "id": 318,
+                        "title": "4-комнатная",
+                        "plan": [
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_8740ec2494a64d25b78ee5e23a8cdf07_1d834fc1.png?modified=1763567431",
+                                "text": "3д вид"
+                            },
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_81b922e0d5ed8ec36aaed8566b4352c7_9499d808.jpg?modified=1763567431",
+                                "text": "2д вид"
+                            }
+                        ],
+                        "area": 68,
+                        "price": 6229664,
+                        "oldPrice": 6449664,
+                        "favorite": false,
+                        "showPrice": true,
+                        "state": {
+                            "available": true,
+                            "title": "Свободно"
+                        },
+                        "block": "5",
+                        "section": "1",
+                        "floor": {
+                            "value": 2,
+                            "total": 8
+                        },
+                        "delivery": {
+                            "label": "Год сдачи",
+                            "title": "2027"
+                        },
+                        "options": [
+                            {
+                                "id": 3,
+                                "title": "Мастер спальня"
+                            },
+                            {
+                                "id": 11,
+                                "title": "Два санузла"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Вид на парк"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Красивый балкон"
+                            }
+                        ],
+                        "query": "Покажи квартиру"
+                    },
+                    {
+                        "id": 319,
+                        "title": "3-комнатная",
+                        "plan": [
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_8740ec2494a64d25b78ee5e23a8cdf07_1d834fc1.png?modified=1763567431",
+                                "text": "3д вид"
+                            },
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_81b922e0d5ed8ec36aaed8566b4352c7_9499d808.jpg?modified=1763567431",
+                                "text": "2д вид"
+                            }
+                        ],
+                        "area": 56,
+                        "price": 5229664,
+                        "oldPrice": 5449664,
+                        "favorite": false,
+                        "showPrice": true,
+                        "state": {
+                            "available": true,
+                            "title": "Свободно"
+                        },
+                        "block": "5",
+                        "section": "1",
+                        "floor": {
+                            "value": 2,
+                            "total": 8
+                        },
+                        "delivery": {
+                            "label": "Год сдачи",
+                            "title": "2027"
+                        },
+                        "options": [
+                            {
+                                "id": 3,
+                                "title": "Мастер спальня"
+                            },
+                            {
+                                "id": 11,
+                                "title": "Два санузла"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Вид на парк"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Красивый балкон"
+                            }
+                        ],
+                        "query": "Покажи квартиру"
+                    },
+                    {
+                        "id": 320,
+                        "title": "2-комнатная",
+                        "plan": [
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_8740ec2494a64d25b78ee5e23a8cdf07_1d834fc1.png?modified=1763567431",
+                                "text": "3д вид"
+                            },
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_81b922e0d5ed8ec36aaed8566b4352c7_9499d808.jpg?modified=1763567431",
+                                "text": "2д вид"
+                            }
+                        ],
+                        "area": 32,
+                        "price": 3429664,
+                        "oldPrice": 3649664,
+                        "favorite": false,
+                        "showPrice": true,
+                        "state": {
+                            "available": true,
+                            "title": "Свободно"
+                        },
+                        "block": "5",
+                        "section": "1",
+                        "floor": {
+                            "value": 2,
+                            "total": 8
+                        },
+                        "delivery": {
+                            "label": "Год сдачи",
+                            "title": "2027"
+                        },
+                        "options": [
+                            {
+                                "id": 3,
+                                "title": "Мастер спальня"
+                            },
+                            {
+                                "id": 11,
+                                "title": "Два санузла"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Вид на парк"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Красивый балкон"
+                            }
+                        ],
+                        "query": "Покажи квартиру"
+                    },
+                    {
+                        "id": 321,
+                        "title": "2-комнатная",
+                        "plan": [
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_8740ec2494a64d25b78ee5e23a8cdf07_1d834fc1.png?modified=1763567431",
+                                "text": "3д вид"
+                            },
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_81b922e0d5ed8ec36aaed8566b4352c7_9499d808.jpg?modified=1763567431",
+                                "text": "2д вид"
+                            }
+                        ],
+                        "area": 29.8,
+                        "price": 2229664,
+                        "oldPrice": 2449664,
+                        "favorite": false,
+                        "showPrice": true,
+                        "state": {
+                            "available": true,
+                            "title": "Свободно"
+                        },
+                        "block": "5",
+                        "section": "1",
+                        "floor": {
+                            "value": 2,
+                            "total": 8
+                        },
+                        "delivery": {
+                            "label": "Год сдачи",
+                            "title": "2027"
+                        },
+                        "options": [
+                            {
+                                "id": 3,
+                                "title": "Мастер спальня"
+                            },
+                            {
+                                "id": 11,
+                                "title": "Два санузла"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Вид на парк"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Красивый балкон"
+                            }
+                        ],
+                        "query": "Покажи квартиру"
+                    },
+                    {
+                        "id": 322,
+                        "title": "2-комнатная",
+                        "plan": [
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_8740ec2494a64d25b78ee5e23a8cdf07_1d834fc1.png?modified=1763567431",
+                                "text": "3д вид"
+                            },
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_81b922e0d5ed8ec36aaed8566b4352c7_9499d808.jpg?modified=1763567431",
+                                "text": "2д вид"
+                            }
+                        ],
+                        "area": 36,
+                        "price": 3259664,
+                        "oldPrice": 3449664,
+                        "favorite": false,
+                        "showPrice": true,
+                        "state": {
+                            "available": true,
+                            "title": "Свободно"
+                        },
+                        "block": "5",
+                        "section": "1",
+                        "floor": {
+                            "value": 2,
+                            "total": 8
+                        },
+                        "delivery": {
+                            "label": "Год сдачи",
+                            "title": "2027"
+                        },
+                        "options": [
+                            {
+                                "id": 3,
+                                "title": "Мастер спальня"
+                            },
+                            {
+                                "id": 11,
+                                "title": "Два санузла"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Вид на парк"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Красивый балкон"
+                            }
+                        ],
+                        "query": "Покажи квартиру"
+                    },
+                    {
+                        "id": 323,
+                        "title": "2-комнатная",
+                        "plan": [
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_8740ec2494a64d25b78ee5e23a8cdf07_1d834fc1.png?modified=1763567431",
+                                "text": "3д вид"
+                            },
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_81b922e0d5ed8ec36aaed8566b4352c7_9499d808.jpg?modified=1763567431",
+                                "text": "2д вид"
+                            }
+                        ],
+                        "area": 41.8,
+                        "price": 3329664,
+                        "oldPrice": 3349664,
+                        "favorite": false,
+                        "showPrice": true,
+                        "state": {
+                            "available": true,
+                            "title": "Свободно"
+                        },
+                        "block": "5",
+                        "section": "1",
+                        "floor": {
+                            "value": 2,
+                            "total": 8
+                        },
+                        "delivery": {
+                            "label": "Год сдачи",
+                            "title": "2027"
+                        },
+                        "options": [
+                            {
+                                "id": 3,
+                                "title": "Мастер спальня"
+                            },
+                            {
+                                "id": 11,
+                                "title": "Два санузла"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Вид на парк"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Красивый балкон"
+                            }
+                        ],
+                        "query": "Покажи квартиру"
+                    },
+                    {
+                        "id": 324,
+                        "title": "2-комнатная",
+                        "plan": [
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_8740ec2494a64d25b78ee5e23a8cdf07_1d834fc1.png?modified=1763567431",
+                                "text": "3д вид"
+                            },
+                            {
+                                "image": "https://files.planoplan.com/upload/userdata/1/2/teams/438/projects/4242288/screenshots/thumbx_w_81b922e0d5ed8ec36aaed8566b4352c7_9499d808.jpg?modified=1763567431",
+                                "text": "2д вид"
+                            }
+                        ],
+                        "area": 31.8,
+                        "price": 4229664,
+                        "oldPrice": 4449664,
+                        "favorite": false,
+                        "showPrice": true,
+                        "state": {
+                            "available": true,
+                            "title": "Свободно"
+                        },
+                        "block": "5",
+                        "section": "1",
+                        "floor": {
+                            "value": 2,
+                            "total": 8
+                        },
+                        "delivery": {
+                            "label": "Год сдачи",
+                            "title": "2027"
+                        },
+                        "options": [
+                            {
+                                "id": 3,
+                                "title": "Мастер спальня"
+                            },
+                            {
+                                "id": 11,
+                                "title": "Два санузла"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Вид на парк"
+                            },
+                            {
+                                "id": 12,
+                                "title": "Красивый балкон"
+                            }
+                        ],
+                        "query": "Покажи квартиру"
+                    }
+                ]
+            },
+            "miniInfo": {
+                "image": "/images/render.jpg",
+                "title": "Квартиры",
+                "fullscreen": false
+            }
+        },
+        "suggestedOptions": [
+            {
+                "title": "Расскажи о погоде",
+                "type": "query"
+            },
+            {
+                "title": "Покажи примеры",
+                "type": "query"
+            },
+            {
+                "title": "Помоги с задачей",
+                "type": "query"
+            }
+        ],
+        "suggestedOptionsStrict": [
+            {
+                "type": "premise",
+                "label": "Квартира №3, 2-комн., 62.4 м²",
+                "payload": {
+                    "id": 315
+                }
+            },
+            {
+                "type": "premise",
+                "label": "Квартира №5, 1-комн., 45.0 м²",
+                "payload": {
+                    "id": 318
+                }
+            }
+        ],
+        "selectedOption": null
+    }
+}

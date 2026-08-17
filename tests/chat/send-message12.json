@@ -1,0 +1,204 @@
+{
+    "userMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440012",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "USER",
+        "content": "Покажи параметрический выборщик",
+        "createdAt": "2026-04-23T12:00:00Z",
+        "dataObjectVisual": null,
+        "suggestedOptions": null,
+        "suggestedOptionsStrict": null,
+        "selectedOption": null
+    },
+    "assistantMessage": {
+        "messageId": "650e8400-e29b-41d4-a716-446655440013",
+        "chatId": "550e8400-e29b-41d4-a716-446655440000",
+        "role": "ASSISTANT",
+        "content": "Вот подборка квартир! Чем могу вам помочь?",
+        "createdAt": "2026-04-23T12:00:01Z",
+        "dataObjectVisual": {
+            "map": {
+                "filter": [
+                    {
+                        "label": "Парки",
+                        "type": "parks",
+                        "icon": "/images/map/park.svg",
+                        "count": 3
+                    },
+                    {
+                        "label": "Метро",
+                        "type": "metro",
+                        "icon": "/images/map/metro.svg",
+                        "count": 2
+                    },
+                    {
+                        "label": "Супермаркеты",
+                        "type": "supermarket",
+                        "icon": "/images/map/supermarket.svg",
+                        "count": 10
+                    },
+                    {
+                        "label": "Школы",
+                        "type": "school",
+                        "icon": "/images/map/school.svg",
+                        "count": 0
+                    }
+                ],
+                "location": {
+                    "zoom": 15,
+                    "center": [51.702115, 39.193415],
+                    "markers": [
+                        {
+                            "id": 69,
+                            "coords": [51.702631, 39.193129],
+                            "icon": {
+                                "type": "all",
+                                "src": "/images/map/pin.svg",
+                                "size": {
+                                    "width": 58,
+                                    "height": 59
+                                }
+                            },
+                            "type": "all",
+                            "position": "top",
+                            "balloon": {
+                                "title": "Тут важный текст",
+                                "image": null,
+                                "text": ""
+                            },
+                            "notСluster": true,
+                            "zIndex": 2,
+                            "modifyClass": "object"
+                        },
+                        {
+                            "id": 71,
+                            "coords": [51.705631, 39.198129],
+                            "icon": {
+                                "type": "parks",
+                                "src": "/images/map/park.svg",
+                                "size": {
+                                    "width": 20,
+                                    "height": 20
+                                }
+                            },
+                            "type": "parks",
+                            "position": "top",
+                            "balloon": {
+                                "title": "Парк",
+                                "image": null,
+                                "text": "Это парк самый крутой"
+                            },
+                            "notСluster": true,
+                            "zIndex": 1,
+                            "modifyClass": "parks"
+                        },
+                        {
+                            "id": 72,
+                            "coords": [51.699631, 39.188129],
+                            "icon": {
+                                "type": "metro",
+                                "src": "/images/map/metro.svg",
+                                "size": {
+                                    "width": 20,
+                                    "height": 20
+                                }
+                            },
+                            "type": "metro",
+                            "position": "top",
+                            "balloon": {
+                                "title": "Метро",
+                                "image": null,
+                                "text": ""
+                            },
+                            "notСluster": true,
+                            "zIndex": 1,
+                            "modifyClass": "metro"
+                        },
+                        {
+                            "id": 7777,
+                            "coords": [51.700331, 39.182229],
+                            "icon": {
+                                "type": "supermarket",
+                                "src": "/images/map/supermarket.svg",
+                                "size": {
+                                    "width": 20,
+                                    "height": 20
+                                }
+                            },
+                            "type": "supermarket",
+                            "position": "top",
+                            "balloon": {
+                                "title": "Супермаркет",
+                                "image": null,
+                                "text": ""
+                            },
+                            "notСluster": true,
+                            "zIndex": 1,
+                            "modifyClass": "metro"
+                        }
+                    ]
+                },
+                "contacts": [
+                    {
+                        "markerId": "69",
+                        "title": "Офис продаж на объекте",
+                        "address": "Санкт-Петербург, ул. Литераторов, 15",
+                        "times": ["Пн - Пт: 10:00 - 19:00", "Сб - Вс: Выходной"],
+                        "phone": "8 (800) 250-24-35",
+                        "email": "object@dev.ru"
+                    },
+                    {
+                        "markerId": "70",
+                        "title": "Офис продаж ",
+                        "address": "Санкт-Петербург, ул. Литераторов, 34",
+                        "times": ["Пн - Пт: 10:00 - 19:00", "Сб - Вс: Выходной"],
+                        "phone": "8 (800) 250-24-35",
+                        "email": "object-long-email@dev.ru"
+                    },
+                    {
+                        "markerId": "72",
+                        "title": "Офис продаж ",
+                        "address": "Санкт-Петербург, ул. Литераторов, 34",
+                        "times": ["Пн - Пт: 10:00 - 19:00", "Сб - Вс: Выходной"],
+                        "phone": "8 (800) 250-24-35",
+                        "email": "object-long-email@dev.ru"
+                    }
+                ]
+            },
+            "miniInfo": {
+                "title": "Расположение"
+            }
+        },
+        "suggestedOptions": [
+            {
+                "title": "Расскажи о погоде",
+                "type": "query"
+            },
+            {
+                "title": "Покажи примеры",
+                "type": "query"
+            },
+            {
+                "title": "Помоги с задачей",
+                "type": "query"
+            }
+        ],
+        "suggestedOptionsStrict": [
+            {
+                "type": "premise",
+                "label": "Квартира №3, 2-комн., 62.4 м²",
+                "payload": {
+                    "id": 315
+                }
+            },
+            {
+                "type": "premise",
+                "label": "Квартира №5, 1-комн., 45.0 м²",
+                "payload": {
+                    "id": 318
+                }
+            }
+        ],
+        "selectedOption": null
+    }
+}

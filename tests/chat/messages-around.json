@@ -1,0 +1,263 @@
+{
+    "messages": [
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440000",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Привет! Ищу квартиру в новостройке.",
+            "createdAt": "2026-04-23T12:00:00.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440001",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "Здравствуйте! Подскажите, какой район и бюджет вас интересуют?",
+            "createdAt": "2026-04-23T12:00:01.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440002",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Район — север города, бюджет до 14 млн.",
+            "createdAt": "2026-04-23T12:00:02.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440003",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "На севере есть несколько ЖК. Могу показать варианты 1–3 комнат в вашем бюджете.",
+            "createdAt": "2026-04-23T12:00:03.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440004",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Покажи двушки до 65 м².",
+            "createdAt": "2026-04-23T12:00:04.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440005",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "Вот подборка двухкомнатных до 65 м² в активных проектах.",
+            "createdAt": "2026-04-23T12:00:05.000Z",
+            "dataObjectVisual": {
+                "premises": [
+                    {
+                        "id": 315,
+                        "rooms": 2,
+                        "title": "Квартира №3",
+                        "description": "ЖК БЕРЁЗКА, 2-комн.",
+                        "area": 62.4,
+                        "price": 13500000,
+                        "showPrice": true,
+                        "state": {
+                            "available": true,
+                            "title": "Свободно"
+                        },
+                        "block": "1",
+                        "section": "1",
+                        "floor": {
+                            "value": 12,
+                            "total": 17
+                        }
+                    }
+                ],
+                "minioInfo": {
+                    "image": "Ссылка на картинку",
+                    "premies": true
+                }
+            },
+            "suggestedOptions": [
+                {
+                    "title": "Расскажи больше",
+                    "type": "query"
+                },
+                {
+                    "title": "Покажи пример",
+                    "type": "query"
+                }
+            ],
+            "suggestedOptionsStrict": [],
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440006",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Что за ЖК Берёзка?",
+            "createdAt": "2026-04-23T12:00:06.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440007",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "ЖК «Берёзка» — жилой комплекс с подземным паркингом, двором без машин и сдачей в 2026 году.",
+            "createdAt": "2026-04-23T12:00:07.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440008",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Есть ли квартиры на высоких этажах?",
+            "createdAt": "2026-04-23T12:00:08.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440009",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "Да, на этажах 10–17 остались свободные лоты с видом на парк.",
+            "createdAt": "2026-04-23T12:00:09.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440010",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Сколько стоит двушка 62 м²?",
+            "createdAt": "2026-04-23T12:00:10.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440011",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "Квартира №3 — 62,4 м², цена 13 500 000 ₽, статус «Свободно».",
+            "createdAt": "2026-04-23T12:00:11.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": [
+                {
+                    "title": "Записаться на просмотр",
+                    "type": "query"
+                },
+                {
+                    "title": "Расчёт ипотеки",
+                    "type": "query"
+                }
+            ],
+            "selectedOption": null,
+            "suggestedOptionsStrict": []
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440012",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Можно ипотеку?",
+            "createdAt": "2026-04-23T12:00:12.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440013",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "Да, работаем с банками-партнёрами. Ставки и первоначальный взнос зависят от программы.",
+            "createdAt": "2026-04-23T12:00:13.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440014",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Какой первый взнос минимальный?",
+            "createdAt": "2026-04-23T12:00:14.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440015",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "Обычно от 15–20% стоимости. Точный расчёт сделаем после выбора лота.",
+            "createdAt": "2026-04-23T12:00:15.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440016",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Есть отделка?",
+            "createdAt": "2026-04-23T12:00:16.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440017",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "Доступны варианты: white box, чистовая и дизайн-проект под ключ.",
+            "createdAt": "2026-04-23T12:00:17.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440018",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Покажи планировку №3.",
+            "createdAt": "2026-04-23T12:00:18.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440019",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "ASSISTANT",
+            "content": "Отправляю планировку и схему расположения на этаже.",
+            "createdAt": "2026-04-23T12:00:19.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        },
+        {
+            "messageId": "650e8400-e29b-41d4-a716-446655440020",
+            "chatId": "550e8400-e29b-41d4-a716-446655440000",
+            "role": "USER",
+            "content": "Когда ключи?",
+            "createdAt": "2026-04-23T12:00:20.000Z",
+            "dataObjectVisual": null,
+            "suggestedOptions": null,
+            "selectedOption": null
+        }
+    ],
+    "targetMessageIndex": 10,
+    "hasOlder": true,
+    "hasNewer": true
+}
